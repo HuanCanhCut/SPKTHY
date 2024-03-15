@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Thắp hương khấn phật online</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+            integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+    </head>
+    <body>
+        <div class="container">
+            <div class="temple">
+                <img src="https://img1.picmix.com/output/stamp/normal/1/3/4/6/2296431_9c6f7.gif" alt="" class="smoke" />
+                <img src="./assets/images/VS4661.png" alt="" class="temple-item" />
+                <div class="progress"></div>
+                <img src="./assets/images/nhang.png" alt="" class="nhang" />
+            </div>
+            <div class="input-container">
+                <input type="text" class="input name" placeholder="Tên của bạn" />
+                <input type="text" class="input hope" placeholder="Mong muốn của bạn" />
+                <button class="btn">Thắp hương</button>
+                <span class="hidden title">Mong ước của con đã được thực hiện</span>
+            </div>
+            <div class="overlay">
+                <div class="modal">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <h1 class="modal-title">Kiểm tra thông tin</h1>
+                    <p class="modal-description">Bạn chưa nhập thông tin để ước nguyện</p>
+                    <button class="close-btn">OK</button>
+                </div>
+            </div>
+            <audio class="audio" src="./assets/images/tungkinh.mp3" loop></audio>
+        </div>
+    </body>
+    <script src="main.js"></script>
+</html>

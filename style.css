@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    max-height: 100vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+
+.temple {
+    width: 300px;
+    position: relative;
+}
+
+.smoke {
+    position: absolute;
+    background-color: transparent;
+    transition: all 5s linear;
+    opacity: 0;
+    top: -20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.progress {
+    position: absolute;
+    bottom: -10px;
+    width: 600px;
+    height: 10px;
+    background-color: orange;
+    border-radius: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.temple .temple-item {
+    width: 100%;
+    object-fit: cover;
+    z-index: 3;
+}
+
+.nhang {
+    height: 100px;
+    position: absolute;
+    left: 48.5%;
+    object-fit: cover;
+    opacity: 0;
+    transition: all ease-in-out 1.5s;
+}
+
+.input-container {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.input {
+    width: 100%;
+    border: none;
+    padding: 10px 6px;
+    border-radius: 4px;
+    outline: none;
+    border: 2px solid rgba(49, 49, 49, 0.281);
+}
+
+input:focus {
+    border: 2px solid rgb(0, 204, 255);
+}
+
+.hope {
+    height: 20px;
+}
+
+.btn {
+    width: 130px;
+    height: 40px;
+    border: none;
+    background-color: orange;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #fff;
+    border: 2px solid blue;
+    color: blue;
+}
+
+.title {
+    color: orange;
+    font-weight: 600;
+    animation: animation 2s linear infinite;
+    opacity: 0;
+}
+
+@keyframes animation {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #2222225d;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay.open {
+    display: flex;
+}
+
+.modal {
+    padding: 30px 50px 20px 50px;
+    background-color: #fff;
+    color: #595959;
+    text-align: center;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.overlay.open .modal {
+    opacity: 1;
+}
+
+.modal i {
+    font-size: 100px;
+    color: orange;
+}
+
+.modal button {
+    width: 50px;
+    padding: 10px 0;
+    border-radius: 4px;
+    background-color: blue;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
